@@ -6,7 +6,7 @@ metadata:
     app: wordpress
 spec:
   ports:
-    - port: 10080
+    - port: 58080
   selector:
     app: wordpress
     tier: frontend
@@ -56,7 +56,7 @@ spec:
               name: mysql-pass
               key: password
         ports:
-        - containerPort: 10080
+        - containerPort: 58080
           name: wordpress
         volumeMounts:
         - name: wordpress-persistent-storage
